@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>Hello, world!</title>
+        <style>
+            .row div{
+                border: 1px solid #000;
+                padding: 1em;
+                text-align: center;
+                background-color: #dedede;
+            }
+        </style>
+
+
+    </head>
+    <body>
+         <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+
+        <h3>HELLO WORLD</h3>
+        <p>viewportとはスマートフォンやPC画面における表示領域のことです。head要素内のmetaタグで指定をします。</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">col-md-6</div>
+                <div class="offset-md-2 col-md-4">col-md-4</div>
+
+                <table class="table table-striped-bordered">
+                    <tr>
+                        <th class="text-center">都道府県</th>
+                        <th class="text-center">人口（人）</th>
+                        <th class="text-center">面積（km<sup>2</sup>）</th>
+                    </tr>
+                    <tr>
+                        <td>東京都</td>
+                        <td class="text-right">13,507,347人</td>
+                        <td class="text-right">2,190.90km<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>神奈川県</td>
+                        <td class="text-right">9,146,101人</td>
+                        <td class="text-right">2,415.86km<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>大阪府</td>
+                        <td class="text-right">8,838,988人</td>
+                        <td class="text-right">1904.99km<sup>2</sup></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <form>
+            <div class="form-group　row">
+                <label class="col-4 col-form-label">個人情報</label>
+            </div>
+            <div class="form-group　row">
+              <label class="col-4 col-form-label">郵便番号</label>
+              <div class="form-group input-group">
+                  <!-- 左端につけるアクセサリ -->
+                  <div class="input-group-prepend">
+                      <span class="input-group-text">〒</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="000-0000">
+              </div>
+            </div>
+            <div class="form-group　row">
+                <label class="col-2 col-form-label">姓</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" name="lastname">
+                </div>
+            </div>
+            <div class="form-group　row">
+                <label class="col-2 col-form-label">名</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" name="firstname">
+                </div>
+            </div>
+            <br>
+            <div class="offseet-7 col-5">
+                <button type="submit" class="btn btn-primary">登録</button>
+            </div>
+        </form>
+    </body>
+</html>
